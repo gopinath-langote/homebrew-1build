@@ -2,26 +2,21 @@
 class OneBuild < Formula
   desc "Frictionless way of managing project-specific commands"
   homepage "https://github.com/gopinath-langote/1build"
-  version "1.4.3"
+  version "1.4.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gopinath-langote/1build/releases/download/v1.4.3/1build_1.4.3_Darwin_x86_64.tar.gz"
-    sha256 "fe8ab89737af8f7f833e638e6779d3c57ebc246ec037fa46511412011e9c25c2"
+    url "https://github.com/gopinath-langote/1build/releases/download/v1.4.0/1build_1.4.0_Darwin_x86_64.tar.gz"
+    sha256 "cab310a296bd4e24ab44f7f550a5e4747b4bd60b53e481fc16b164e45a66c5bd"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gopinath-langote/1build/releases/download/v1.4.3/1build_1.4.3_Linux_x86_64.tar.gz"
-      sha256 "54ddcc5ad3131e4b32f7423f0a05385eb38df11df08325c41de90793d4629173"
+      url "https://github.com/gopinath-langote/1build/releases/download/v1.4.0/1build_1.4.0_Linux_x86_64.tar.gz"
+      sha256 "2169464eb0bcdd0ddf7455fc2390ff7c69709af1ca5d06296e57d8439f87dc84"
     end
   end
 
   def install
     bin.install "1build"
-  end
-
-  def caveats; <<~EOS
-    How to use this binary
-  EOS
   end
 
   test do
