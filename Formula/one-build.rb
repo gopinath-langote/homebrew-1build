@@ -2,16 +2,16 @@
 class OneBuild < Formula
   desc "Frictionless way of managing project-specific commands"
   homepage "https://github.com/gopinath-langote/1build"
-  version "1.4.2"
+  version "1.4.3"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gopinath-langote/1build/releases/download/v1.4.2/1build_1.4.2_Darwin_x86_64.tar.gz"
-    sha256 "bd57c7dac77dbd3a9a647164a9173fccd3a059ce9f5eb248900eb819b90ed6d1"
+    url "https://github.com/gopinath-langote/1build/releases/download/v1.4.3/1build_1.4.3_Darwin_x86_64.tar.gz"
+    sha256 "28be4a624a761ab5189202b604a9d13a63c5a7c83cf7271f1912478666fc694f"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gopinath-langote/1build/releases/download/v1.4.2/1build_1.4.2_Linux_x86_64.tar.gz"
-      sha256 "70fac5911b4b321c60c7c52f9bdd6ea20b403e8713c52e5ba5ba0993a033ed44"
+      url "https://github.com/gopinath-langote/1build/releases/download/v1.4.3/1build_1.4.3_Linux_x86_64.tar.gz"
+      sha256 "e85567500a4c6c9fcec17daa731d64eb77477626fb18090feaa1f75c9fbb5a3c"
     end
   end
 
