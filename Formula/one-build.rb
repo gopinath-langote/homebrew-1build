@@ -7,16 +7,21 @@ class OneBuild < Formula
 
   if OS.mac?
     url "https://github.com/gopinath-langote/1build/releases/download/v1.4.3/1build_1.4.3_Darwin_x86_64.tar.gz"
-    sha256 "28be4a624a761ab5189202b604a9d13a63c5a7c83cf7271f1912478666fc694f"
+    sha256 "fe8ab89737af8f7f833e638e6779d3c57ebc246ec037fa46511412011e9c25c2"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/gopinath-langote/1build/releases/download/v1.4.3/1build_1.4.3_Linux_x86_64.tar.gz"
-      sha256 "e85567500a4c6c9fcec17daa731d64eb77477626fb18090feaa1f75c9fbb5a3c"
+      sha256 "54ddcc5ad3131e4b32f7423f0a05385eb38df11df08325c41de90793d4629173"
     end
   end
 
   def install
     bin.install "1build"
+  end
+
+  def caveats; <<~EOS
+    How to use this binary
+  EOS
   end
 
   test do
