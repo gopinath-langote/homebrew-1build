@@ -7,11 +7,11 @@ class OneBuild < Formula
 
   if OS.mac?
     url "https://github.com/gopinath-langote/1build/releases/download/v1.4.1/1build_1.4.1_Darwin_x86_64.tar.gz"
-    sha256 "82e8031fbd5df405923909ee806052498989969ee1ce6d6a7296fdae439607ba"
+    sha256 "e74f792ddc6720bd78b7a935eaa74e427b883fcf98d5d0ca81c31c61c7b7da47"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/gopinath-langote/1build/releases/download/v1.4.1/1build_1.4.1_Linux_x86_64.tar.gz"
-      sha256 "4d672240db9d05f56e3c5c189bce963c566dccf03803dc75f2080c3f5debf338"
+      sha256 "70c92e90148ec59971d6eeef5dabbe6a6650f7c87f50fcfe496d1bd5d4321cdd"
     end
   end
 
